@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale = 1.0">
+        <title>Ranking</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <nav class="main-menu">
+            <ul>
+                <li class="open-menu show-when-compact"><a href="#">MENU</a></li>
+                <li class="close-menu"><a href="#">Zamknij</a></li> 
+                <li><a href = "history.html">Historia</a></li>
+                <li><a href = "quiz.html">Quiz</a></li>
+                <li><a href = "index.html">Strona Główna</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h2>Witaj <span id="helloName">nieznajomy</span></h2>
+            <hr />
+            <h2 class="header">Oto tabela obecnych zawodnikow naszego koła:</h2>
+        </header>
+        <section class="table">
+            <table>
+                <th>Imię i nazwisko</th>
+                <th>Rok urodzenia</th>
+                <th>Ranking</th>
+                <th>Kategoria</th>
+                <tr>
+                    <td>Adam Kowalski</td>
+                    <td>2001</td>
+                    <td>1400</td>
+                    <td>IV</td>
+                </tr>
+                <tr>
+                    <td>Stanisław Nowak</td>
+                    <td>2007</td>
+                    <td>1600</td>
+                    <td>III</td>
+                </tr>
+                <tr>
+                    <td>Michał Spychalski</td>
+                    <td>2000</td>
+                    <td>1800</td>
+                    <td>II</td>
+                </tr>
+                <tr>
+                    <td>Krzysztof Spychalski</td>
+                    <td>1958</td>
+                    <td>1800</td>
+                    <td>II</td>
+                </tr>
+                <tr>
+                    <td>Rafał Spychalski</td>
+                    <td>2005</td>
+                    <td>1600</td>
+                    <td>III</td>
+                </tr>
+            </table>
+            <div>
+                <p>Jeśli chcesz się dowiedzieć o rankingu lub rankingu <abbr title="Federacja szachowa">FIDE</abbr> wejdz na strone <a href="http://www.chessarbiter.com" target="_blank">www.chessarbiter.com</a></p>
+            </div>
+        </section>
+        <section class="form">
+            <p>Jeśli chciałbyś dołączyć do nas wypełnij formularz!</p>
+            <form action="" method="get">
+                <fieldset>
+
+                    <label for="name">Imię: </label>
+                    <input type="text" name="name" required="required" onchange="updateHelloName()"/><br>
+                    <label for="surname">Nazwisko: </label>
+                    <input type="text" name="surname" required="required" /><br>
+                    <label for="datebrth">Rok urodzenia: </label>
+                    <input type="text" name="datebrth" required="required" /><br>
+                    <label for="starters">Jakie debiuty znasz? </label><br>
+                    <textarea placeholder="Tu wpisz debiuty :)"></textarea><br>
+                    <label for="style">Jak styl gry preferujesz? </label>
+                    <div class="radio">
+                        <input type="radio" name="style" value="offensive" checked="checked" />Ofensywny
+                        <input type="radio" name="style" value="various" />Różnorodny
+                        <input type="radio" name="style" value="offensive" />Defensywny<br>
+                    </div>
+                    <label for="rank">Ranking: </label>
+                    <input type="number" name="rank" required="required" /><br>
+                    <label for="rank">E-mail: </label>
+
+                    <input type="email" name="email" /><br>
+                    <input type="reset" name="reset" value="reset" class="submit" />
+                    <input type="submit" value="Wyślij :)" class="submit" />
+                </fieldset>
+            </form>
+        </section>
+        <footer>
+            <p class="copy">&copy <em>Copyright Michał Spychalski</em></p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+            <script src="ranking.js"></script>
+            <script src="external.js"></script>
+    </body>
+</html>

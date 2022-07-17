@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <title>Quiz</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <nav class="main-menu">
+            <ul>
+                <li class="open-menu show-when-compact"><a href="#">MENU</a></li>
+                <li class="close-menu"><a href="#">Zamknij</a></li>
+                <li><a href = "ranking.html">Nasi gracze</a></li>
+                <li><a href = "index.html">Strona Główna</a></li>
+                <li><a href="history.html">Historia</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h3 class="header">Spróbujmy się przekonać jak dobrym szachistą jestes! Rozwiąż poniższy krótki quiz</h3>
+            <figure>
+                <figcaption>
+                    <img src="buzka.png" alt="buzka" />
+                </figcaption>
+            </figure>
+        </header>
+        <section class="quiz">
+            <form class="question" action="">
+                <p>Ile łącznie jest pól na szachownicy?</p>
+                <input type="radio" name="answer1" value="A">32
+                <input type="radio" name="answer1" value="B">64
+                <input type="radio" name="answer1" value="C">128
+            </form>
+            <form class="question" action="">
+                <p>Ile łącznie jest figur na szachownicy?</p>
+                <input type="radio" name="answer2" value="A">16
+                <input type="radio" name="answer2" value="B">32
+                <input type="radio" name="answer2" value="C">64
+            </form>
+
+        </section>
+        <input type="button" name="zapisz" value="zapisz" id="quizSent" onclick="save_answers()"/>
+        <input type="button" name="odznacz" value="odznacz" id="quizcheck" onclick="delete_storage()"/>
+        <footer>
+            <p class="copy">&copy; <em>Copyright Michał Spychalski</em></p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+        <script src="quiz.js"></script>
+        <script src="external.js"></script>
+    </body>
+</html>
